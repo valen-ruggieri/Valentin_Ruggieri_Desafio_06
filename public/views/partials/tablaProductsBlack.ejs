@@ -1,0 +1,38 @@
+
+        
+
+<% if (productos.length > 0) { %>
+  
+  <%- include('./deleteButton.ejs') %>  
+    <div class="d-flex flex-row row ms-2 mb-5">
+        <% productos.forEach((producto , key)=>{ %>
+         
+          <div class="card  m-3 bg-secondary bg-opacity-25  rounded-bottom rounded-3 " style="width: 15rem;">
+            <% if (producto.image){ %> 
+              <img src="<%= producto.image %>" class="card-img-top w-50 pt-3 h-50 m-auto" alt="..." >
+          
+            <% } else {%> 
+              <img src="<%= producto.url %>" class="card-img-top w-50 pt-3 h-50 m-auto" alt="..." > 
+            <% } %> 
+            <div class="card-body   ">
+              <h5 class="card-title text-center bg-danger rounded-3 text-light pb-1"><%= producto.titulo %></h5>
+              <p class=" bg-secondary bg-opacity-25 p-2 text-light rounded-3"><small >Lorem ipsum dolor sit amet consectetur adipisicing elit.</small></p>
+              <p class=" text-center badge bg-success w-50 text-light me-4">$<%= producto.precio %> </p>
+              <b class="  badge bg-secondary bg-opacity-25 text-light pe-2 ps-2 ms-3">ID :  <%= key+1 %></b>
+
+            </div>
+          </div>
+         
+          <% }) %>
+          
+        </div>
+  
+    <% } else { %> 
+       <div class="container border border-2 border-secondary mb-5 mt-5 rounded-bottom rounded-3 bg-dark">
+      <h1 class="text-center  mt-5 h3 text-secondary  text-opacity-10 fs-1 mb-5 ">No existen productos</h1>
+      
+      
+      </div>
+      <% } %> 
+
+   

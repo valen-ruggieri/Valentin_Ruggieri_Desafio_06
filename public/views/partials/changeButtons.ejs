@@ -1,0 +1,27 @@
+<form
+  action="/change"
+  method="POST"
+  class="mt-2 col d-flex justify-content-center align-items-center"
+>
+  <div class="text-center m-2">
+    <% if (theme == 'white') {%>
+    <h1 class="badge bg-dark rounded-pill fs-1">Bienvenidos al desafio 06</h1>
+    <div class="mt-2 mb-2">
+      <label class="switchLight">
+        <button type="submit" name="theme" value="black"></button>
+        <span class="sliderLight"></span>
+      </label>
+    </div>
+    <% }else if (theme == 'black' ){ %>
+    <h1 class="badge bg-light text-dark rounded-pill fs-1">
+      Bienvenidos al desafio 06
+    </h1>
+    <div class="mt-2 mb-2">
+      <label class="switchBlack">
+        <button type="submit" name="theme" value="white"></button>
+        <span class="sliderBlack"></span>
+      </label>
+    </div>
+    <% } %>
+  </div>
+</form>

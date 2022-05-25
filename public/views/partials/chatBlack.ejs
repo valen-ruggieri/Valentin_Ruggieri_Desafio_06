@@ -1,0 +1,35 @@
+<div class="container bg-dark  border border-2 border-secondary text-center mt-2 mb-2 p-3 ">
+  <h3 class="m-2 text-secondary  text-opacity-10">CHAT</h3>
+  <button class="d-none"  id="deleteChat">🗑 DELETECHAT</button>
+
+  <form class="container m-3 ">
+    
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="d-none" id="messagesBox"></div>
+    </div>
+    
+    <div class="row  d-flex justify-content-center align-items-center ">
+      <div class="col-auto">
+        <label for="inputEmail" class="col-form-label text-secondary  text-opacity-10">Email</label>
+      </div>
+      <div class="col-auto me-3">
+        <input type="text" class="form-control btn bg-secondary text-white bg-opacity-10 " id="autorEmail" />
+      </div>
+      <div class="col-auto ms-3">
+        <label for="inputMessage" class="col-form-label text-secondary  text-opacity-10">message</label>
+      </div>
+      <input type="text" class="d-none" id="theme" value="black" />
+
+      <div class="col-auto">
+        <input type="text" class="form-control btn bg-secondary text-white bg-opacity-10" id="message" />
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-primary ms-5" type="submit" id="submit">
+          <a href="#chat" class="w-50 text-decoration-none text-light"
+            >Enviar</a
+          >
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

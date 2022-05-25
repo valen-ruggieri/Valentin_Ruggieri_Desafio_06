@@ -1,0 +1,29 @@
+{
+  "name": "desafio_06",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valen-ruggieri/Valentin_Ruggieri_Desafio_06.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valen-ruggieri/Valentin_Ruggieri_Desafio_06.git/issues"
+  },
+  "homepage": "https://github.com/valen-ruggieri/Valentin_Ruggieri_Desafio_06.git#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "multer": "^1.4.4",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.16"
+  },
+  "description": "## Funcionamiento"
+}

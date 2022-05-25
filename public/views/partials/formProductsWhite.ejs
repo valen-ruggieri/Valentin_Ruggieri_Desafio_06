@@ -1,0 +1,71 @@
+
+  <div class="text-end ml-5"> 
+    <a class="w-50 text-decoration-none" href="http://localhost:8000/">💒 <b class="badge bg-dark">HOME</b></a>
+
+ </div>
+
+<form class="container border border-2 bg-gradient border-secondary mt-3 rounded-bottom rounded-3 bg-secondary  bg-opacity-10" action="/form" method="POST" enctype="multipart/form-data" >
+    <h1 class="text-center  mt-5 h3 text-dark text-opacity-10 ">TIENDA DE PRODUCTOS</h1 >
+       
+      
+      
+      </div>
+          <div class="col d-flex justify-content-center ">
+            <div class="input-group mt-4 w-50 ">
+            <span class="input-group-text  bg-dark">🛍</span>
+            <input required
+              type="text"
+              class="form-control btn bg-secondary bg-secondary text-dark bg-opacity-25"
+              placeholder="Nombre Producto"
+              name="titulo"
+            />
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center ">
+            <div class="input-group mt-5 w-50 ">
+                <span class="input-group-text bg-dark">💰</span>
+                <input required 
+                type="number" 
+                class="form-control btn bg-secondary bg-secondary text-dark bg-opacity-25" 
+                placeholder="Precio Producto" 
+                name="precio"">
+                
+              </div>
+          </div>
+       
+        
+          <div class="col d-flex justify-content-center">
+            <div class="input-group mt-5 w-50 ">
+              
+            <span class="input-group-text bg-dark"><img src="<%= imgRandom %>" width="20px" height="20px"></span>
+            <input 
+              type="url"
+              class="form-control  btn bg-secondary bg-secondary text-dark bg-opacity-25"
+              placeholder="Imagen Producto Random "
+              name="url"
+              value=<%= imgRandom %>
+             
+            />
+            </div>
+          
+          </div>
+          <h4 class="text-center mt-2">or</h4>
+          <div class="col d-flex justify-content-center">
+            <div class="input-group  mt-2 w-50 ">
+              <input class="btn bg-secondary form-control  bg-secondary text-dark bg-opacity-25 " type="file" name="image" />
+            </div>
+          </div>
+  
+  
+
+          <div class="col d-flex justify-content-center ">
+            <input 
+              type="submit"
+              class="form-control m-5 bg-gradient w-25 btn btn-primary"
+              placeholder="Last name"
+              aria-label="Last name"
+              
+            />
+          </div>
+         
+    </form>
