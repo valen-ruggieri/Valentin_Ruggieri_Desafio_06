@@ -1,4 +1,29 @@
 
+
+<!-- 
+                                            Tabla de productos
+
+    _ Si bien su nombre hace referencia a una tabla en memoria del desafio anterior lo que podemos encontrar
+      es una seccion donde renderizaremos los productos creador por el formulario.
+
+    _ Comenzamos con un if que mediante una comparacion del parametro que le enviamos por la ruta con el 
+      metodo GET nos muestra un mapeo de todo el array 'productos'.
+
+    _ Este mapeo retorna por cada producto una card diseñada en bootstrap en la cual se insertan todas
+      las propiedades de cada producto (titulo, precio, imagen).
+
+    _ Otro punto no menor a aclarar es el renderizado condicional y prioritario que tiene la imagen subida
+      sobre la imagen aleatoria, es decir en caso de no subirse imagen se utilizara la aleatoria por defecto
+      pero en caso de si subirse, esta misma tendra prioridad por sobre la aletoria y sera cual se muestre dentro
+      de la card del producto.
+
+    _ Como pudo llegarse a apreciar disponemos de un include, el cual nos trae el deleteButton que nos servira
+      a la hora de querer eliminar nuestros productos.
+
+    _ Por ultimo tenemos else para el caso en que no haya productos el cual mostrara una seccion vacia con la
+      palbra 'No existen productos'.
+
+ -->
         
 
 <% if (productos.length > 0) { %>

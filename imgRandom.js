@@ -1,3 +1,19 @@
+
+//  Imagen Aleatoria
+
+// Para poder generar una imagen aleatoria la cual podremos utilizar en nuestro formulario a la hora de agregar 
+// productos en caso de no querer subir unna imagen vamos a relizar lo siguiente:
+
+// 1 - Creamos una constate imgRandom la cual va a tener en su valor una funcion.
+// 2 - Creamos nroRandom que tendra como valor mediante Math.round y Math.random un numero entre el 0 y 10.
+// 3 - Creamos un objeto llamado arrayImg el cual en cada propiedad tendra un numero como nombre y un url como valor.
+// 4 - Luego de ello creamos una constante img la cual va tomar como valor el arrayImg en una posicion random entre 0 y 10.
+// 5 - Por ultimo agregamos el retorno de img y exportamos imgRandom.
+
+
+
+
+
 const imgRandom = () => {
   const nroRandom = Math.round(Math.random() * 10);
   const arrayImg = {

@@ -1,3 +1,25 @@
+
+
+<!-- 
+                                    Change Buttons
+
+    _ Estos botones cumplen la funcion de mediante EJS poder renderizar una u otra plantilla
+      de esta manera asimilando lo que seria un cambio de tema de oscuro a claro o viceversa
+
+    _ Su funcion se fectua mediante una peticion la cual renderiza toda la pagina pero conserva
+      los datos tales como el historial d eproductos y los mensajes de los chats, lo unico que cambia
+      es el aspecto de la pagina
+
+    _ Mas especificamente su funcionamiento se basa en retornar un valor 'theme' el cual es tomado por
+      el metodo de la ruta para poder agregar a un array llamado 'web' este mismo array es el que mediante GET 
+      es enviado como parametro al motor de plantilla de esta forma si web tiene dentro el valor black/white
+      va a renderizar cierto conjunto de partials para poder visualizar.
+
+ -->
+
+
+
+
 <form
   action="/change"
   method="POST"

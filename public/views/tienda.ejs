@@ -10,12 +10,28 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/black-friday-shopping-1/64/Physical_Store_Sale-256.png">
     <link rel="stylesheet" href="../style.css" />
-    <title>Formulario Productos</title>
+    <title>Tienda de productos</title>
   </head>
 
-
   
+  <!--                                 Tienda De Productos
+
+      _ Esta plantilla es la que utilizaremos como archivo index, alojando en ella todos los partials que correspondan
+
+      _ Contiene un condicional que mediante la funcion de elegir tema va a renderizar un conjunto de partials
+        u otro conjunto dependiendo de dicho valor 'theme'.
+
+      _ Cabe aclarar que en este archivo es donde encontraremos los scripts de socket y main.js
+
+      _ Brinda la unificacion del renderizado de un conjunto de plantillas parciales para poder crear nuetra pagina
+        simulando ser un archivo html comun pero utilizando todas las grandiosas funcionalidades de las EJS
+
+   -->
+    
+
+
   <% if (theme == 'white') {%> 
     <body class="bg-secondary  bg-opacity-10 mt-2 container">
     <%- include('./partials/changeButtons.ejs') %> 

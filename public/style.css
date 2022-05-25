@@ -1,4 +1,4 @@
-/* From uiverse.io by @victoryamaykin */
+
 .switchBlack {
     position: relative;
     display: inline-block;
@@ -44,12 +44,6 @@
    
 
 
-
-
-
-
-
-   /* From uiverse.io by @victoryamaykin */
 .switchLight {
     position: relative;
     display: inline-block;
@@ -80,8 +74,6 @@
     left: 30px;
     bottom: 3px;
     background-color: #e5e6e8;
-
- 
     border-radius: 50%;
    }
    

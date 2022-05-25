@@ -1,4 +1,15 @@
 
+<!--                                     Delete Button
+                                            
+_   Boton creado para poder efectuar la accion de borrar todos los productos
+
+_   Utiliza su id para ser escuchado por lo que al accionar presenta un evento de 
+    click dentro del main.js y este mismo realiza un socket.emit el cual mediante un splice borra los 
+    productos del array 'productos' y luego los recibe con socket.on dentro del servidor
+
+_   Genera una peticion la cual actualiza el servidor dejando ver los cambios efectuados
+ -->
+
 <form  action="/delete" method="POST" class="text-end " >
     <button class="w-25  badge bg-danger mt-3 " type="submit" id="deleteProducts">🗑 DELETEPRODUCTS</button>
 </form>
