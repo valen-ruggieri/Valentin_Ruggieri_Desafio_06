@@ -30,21 +30,21 @@
     
     <div class="row  d-flex justify-content-center align-items-center ">
       <div class="col-auto">
-        <label for="inputEmail" class="col-form-label text-secondary  text-opacity-10">Email</label>
+        <i id="validationAutor">  </i><label for="inputEmail" class="col-form-label text-secondary  text-opacity-10 ms-2">Email</label>
       </div>
       <div class="col-auto me-3">
-        <input type="text" class="form-control btn bg-secondary text-white bg-opacity-10 " id="autorEmail" />
+        <input type="text" class="form-control  bg-secondary text-white bg-opacity-10 " id="autorEmail" />
       </div>
       <div class="col-auto ms-3">
-        <label for="inputMessage" class="col-form-label text-secondary  text-opacity-10">message</label>
+        <i id="validationMessage">  </i><label for="inputMessage" class="col-form-label text-secondary  text-opacity-10 ms-3">message</label>
       </div>
       <input type="text" class="d-none" id="theme" value="black" />
 
       <div class="col-auto">
-        <input type="text" class="form-control btn bg-secondary text-white bg-opacity-10" id="message" />
+        <input type="text" class="form-control  bg-secondary text-white bg-opacity-10" id="message" />
       </div>
       <div class="col-auto">
-        <button class="btn btn-primary ms-5" type="submit" id="submit">
+        <button disabled class="btn btn-primary ms-5" type="submit" id="submit">
           <a href="#chat" class="w-50 text-decoration-none text-light"
             >Enviar</a
           >
